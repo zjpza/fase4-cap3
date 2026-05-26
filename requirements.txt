@@ -1,0 +1,16 @@
+# requirements.txt
+
+# Data Science
+numpy
+pandas
+
+# ML
+scikit-learn
+
+# Visualization
+matplotlib
+seaborn
+
+# Util
+jupyter
+requests

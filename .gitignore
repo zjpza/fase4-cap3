@@ -1,0 +1,35 @@
+# .gitignore para Python / FIAP
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Modelos
+*.pkl
+*.joblib
+
+# Dados (pequenos CSVs podem ser versionados; datasets grandes nao)
+*.csv
+!src/data/README*
+
+# Logs
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
