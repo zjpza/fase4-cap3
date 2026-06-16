@@ -11,6 +11,8 @@
 
 ## Nome do grupo
 
+Grupo 5 — Classificação de Grãos de Trigo
+
 ## 👨‍🎓 Integrantes: 
 - <a href="https://github.com/HenriqueSanchesSilva">Henrique Sanches Silva</a> — RM 570527
 - <a href="https://github.com/zjpza">João Pedro Zavanela Andreu</a> — RM 570231
@@ -32,28 +34,20 @@ O conjunto de dados utilizado é o **Seeds Dataset (UCI Machine Learning Reposit
 
 A solução percorre todo o ciclo de ciência de dados: análise exploratória dos dados, pré-processamento, implementação e comparação de múltiplos algoritmos de classificação (KNN, SVM, Random Forest, Naive Bayes, Regressão Logística), otimização de hiperparâmetros via Grid Search e Randomized Search, e interpretação dos resultados para extração de insights relevantes ao contexto agrícola.
 
-O projeto foi desenvolvido em notebooks Jupyter (.ipynb) com Python, Pandas, Scikit-learn, Matplotlib e Seaborn, e inclui visualizações interativas, matrizes de confusão e relatórios de métricas comparativas.
+O projeto foi desenvolvido em notebooks Jupyter (.ipynb) com Python, Pandas, Scikit-learn, Matplotlib e Seaborn. Inclui estatísticas descritivas, validação cruzada, Grid Search, Randomized Search, matrizes de confusão, análise estatística entre modelos e relatórios de métricas comparativas.
 
 ## 📁 Estrutura de pastas
 
-Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
-
-- <b>.github</b>: Nesta pasta ficarão os arquivos de configuração específicos do GitHub que ajudam a gerenciar e automatizar processos no repositório.
-
-- <b>assets</b>: aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens, logos e screenshots dos notebooks.
-
-- <b>config</b>: Posicione aqui arquivos de configuração que são usados para definir parâmetros e ajustes do projeto.
-
-- <b>document</b>: aqui estão todos os documentos do projeto que as atividades poderão pedir. Na subpasta "other", adicione documentos complementares e menos importantes.
-
-- <b>scripts</b>: Posicione aqui scripts auxiliares para tarefas específicas do seu projeto. Exemplo: deploy, migrações de banco de dados, backups.
-
-- <b>src</b>: Todo o código fonte criado para o desenvolvimento do projeto.
-  - <b>src/data</b>: Conjunto de dados Seeds (raw e processed), scripts de download e pré-processamento.
-  - <b>src/notebooks</b>: Notebooks Jupyter com EDA, modelos de classificação, otimização e interpretação de resultados.
-  - <b>src/models</b>: Modelos de ML serializados (.pkl) treinados e otimizados.
-
-- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
+- <b>.github</b>: arquivos de configuração específicos do GitHub.
+- <b>assets</b>: imagens, logos e screenshots dos notebooks.
+- <b>config</b>: arquivos de configuração do projeto.
+- <b>document</b>: documentos do projeto, incluindo o AI Project Document.
+- <b>scripts</b>: scripts auxiliares para tarefas específicas.
+- <b>src</b>: código fonte do projeto.
+  - <b>src/data</b>: dataset Seeds (raw e processed), scripts de download e pré-processamento.
+  - <b>src/notebooks</b>: notebooks Jupyter com EDA, modelos, otimização e interpretação.
+  - <b>src/models</b>: modelos de ML serializados (.pkl) gerados pelos notebooks.
+- <b>README.md</b>: guia geral do projeto.
 
 ## 🔧 Como executar o código
 
@@ -79,17 +73,24 @@ pip install -r requirements.txt
 python src/data/download_seeds.py
 ```
 
-4. Execute os notebooks na ordem:
+4. Execute o pré-processamento para gerar os dados de treino e teste:
+```bash
+python src/data/preprocess.py
+```
+
+5. Execute os notebooks na ordem:
 ```bash
 jupyter notebook src/notebooks/
 ```
 
+> Os notebooks 02 e 03 usam pipelines com escalonamento interno. O script `preprocess.py` apenas persiste a divisão treino/teste padronizada para reprodutibilidade; o escalonamento também é reaplicado dentro dos pipelines.
+
 ## 🗃 Histórico de lançamentos
 
 * 1.0.0 - 26/05/2026
-    * Fase 4 CAP 3 — Classificação de Grãos de Trigo com ML: EDA, modelos comparativos (KNN, SVM, RF, Naive Bayes, LogReg), otimização de hiperparâmetros e interpretação de resultados
-* 0.1.0 - XX/XX/2026
-    * Início do projeto e estruturação do repositório
+    * Fase 4 CAP 3 — Classificação de Grãos de Trigo com ML: EDA, modelos comparativos (KNN, SVM, RF, Naive Bayes, LogReg), otimização de hiperparâmetros via Grid Search e Randomized Search, validação cruzada, teste estatístico e interpretação de resultados.
+* 0.1.0 - 15/06/2026
+    * Início do projeto e estruturação do repositório.
 
 ## 📋 Licença
 
