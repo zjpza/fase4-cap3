@@ -28,7 +28,7 @@ Grupo 5 — Classificação de Grãos de Trigo
 
 ## 📜 Descrição
 
-Este projeto aplica a metodologia CRISP-DM para desenvolver um modelo de aprendizado de máquina supervisionado capaz de classificar automaticamente variedades de grãos de trigo com base em suas características físicas. O objetivo é substituir a classificação manual — realizada por especialistas em cooperativas agrícolas de pequeno porte — por uma solução automatizada, rápida e precisa.
+Este projeto aplica a metodologia CRISP-DM para desenvolver um modelo de aprendizado de máquina supervisionado capaz de classificar automaticamente variedades de grãos de trigo com base em suas características físicas. O objetivo é substituir a classificação manual, realizada por especialistas em cooperativas agrícolas de pequeno porte, por uma solução automatizada, rápida e precisa.
 
 O conjunto de dados utilizado é o **Seeds Dataset (UCI Machine Learning Repository)**, contendo 210 amostras de grãos de trigo pertencentes a três variedades (Kama, Rosa e Canadian), descritas por sete atributos físicos: área, perímetro, compacidade, comprimento do núcleo, largura do núcleo, coeficiente de assimetria e comprimento do sulco do núcleo.
 
